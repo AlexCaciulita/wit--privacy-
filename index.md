@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Last Updated: February 10, 2026**
+**Last Updated: February 20, 2026**
 
 Wit Dating ("we," "us," or "our") operates the Wit mobile application (the "App"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App.
 
@@ -48,14 +48,30 @@ We use the information we collect to:
 
 ## 3. Third-Party Services
 
-### 3.1 AI Processing
+### 3.1 AI Processing — Anthropic (Claude AI)
 
-The App uses third-party AI services (Anthropic) to process your coaching requests. When you submit text or extracted screenshot text for analysis, that content is sent to our AI provider for processing. This data is:
+The App uses **Anthropic's Claude AI** to process your coaching requests. Before any data is sent, the App requests your explicit consent.
 
-- Transmitted securely via encrypted connections (HTTPS/TLS).
-- Used solely for generating your coaching response.
-- Subject to the AI provider's data processing policies.
-- Not used by the AI provider to train models on your personal data.
+**What data is sent to Anthropic:**
+- The text of messages you paste or type into the App for analysis.
+- Text extracted from screenshots you upload (via on-device OCR).
+- Your selected coaching preferences (personality, goal, platform) to personalize responses.
+
+**What data is NOT sent to Anthropic:**
+- Your name, email address, or account credentials.
+- Your photos or screenshots (only the extracted text is sent).
+- Your usage history, device information, or any other personal data.
+
+**How the data is transmitted and used:**
+- All data is transmitted securely via encrypted connections (HTTPS/TLS) through our server (Firebase Cloud Functions), which acts as a proxy. Your data does not go directly from your device to Anthropic.
+- The data is used **solely** for generating your coaching response in real time.
+- The data is **not retained** by our server or by Anthropic after the response is delivered.
+- Anthropic **does not use your data to train AI models**, per their data processing terms.
+
+**Anthropic's privacy protections:**
+- Anthropic provides data protection equivalent to or exceeding ours.
+- For more details, see Anthropic's Privacy Policy: https://www.anthropic.com/privacy
+- For Anthropic's data usage policies: https://www.anthropic.com/policies/usage-policy
 
 ### 3.2 Authentication Services
 
@@ -147,4 +163,4 @@ Email: support@witdating.com
 
 ---
 
-*This Privacy Policy is effective as of February 10, 2026.*
+*This Privacy Policy is effective as of February 20, 2026.*
